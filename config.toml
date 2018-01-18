@@ -1,3 +1,11 @@
 baseURL = "https://guide.hduhelp.com"
 languageCode = "zh-cn"
 title = "杭电指南"
+theme = "docdock"
+
+[params]
+themeStyle = "original"
+themeVariant = "blue"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
