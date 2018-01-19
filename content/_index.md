@@ -22,11 +22,4 @@ draft: true
 
 ## 版权申明
 
-杭电助手出品，本手册需要感谢很多人的参与。
-
-感谢小云子提供的“写给新生”基本资料。
-感谢 James 提供的一些关于电信宽带的信息
-
-除此之外还要感谢其他没有统计默默的在群里面回答问题的同学。
-
-[署名-非商业性使用 3.0 中国大陆 (CC BY-NC 3.0 CN)](https://creativecommons.org/licenses/by-nc/3.0/cn/)
+杭电助手出品，[署名-非商业性使用 3.0 中国大陆 (CC BY-NC 3.0 CN)](https://creativecommons.org/licenses/by-nc/3.0/cn/)

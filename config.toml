@@ -6,6 +6,27 @@ theme = "docdock"
 [params]
 themeStyle = "original"
 themeVariant = "blue"
+editURL = "https://github.com/hduhelper/HDU-Guide/edit/master/content/"
+showVisitedLinks = false # default is false
+ordersectionsby = "weight" # ordersectionsby = "title"
+disableHomeIcon = true # default is false
+disableSearch = false # default is false
+disableNavChevron = false # set true to hide next/prev chevron, default is false
+highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+
+[[menu.shortcuts]]
+pre = "<h3>更多</h3>"
+name = "<i class='fa fa-github'></i> Github 仓库地址"
+identifier = "ds"
+url = "https://github.com/hduhelper/HDU-Guide"
+weight = 10
+
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bullhorn'></i> 感谢名单"
+url = "/感谢名单"
+weight = 30
