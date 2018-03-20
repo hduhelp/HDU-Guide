@@ -1,7 +1,7 @@
 ---
 title: "校医院"
 date: 2018-01-19T23:15:02+08:00
-draft: true
+draft: false
 ---
 
 ## 校医院开放时间

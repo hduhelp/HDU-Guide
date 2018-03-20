@@ -1,7 +1,7 @@
 ---
 title: "资料下载"
 date: 2018-01-19T22:54:02+08:00
-draft: true
+draft: false
 ---
 
 ## 论文资料

@@ -1,6 +1,6 @@
-baseURL = "https://guide.hduhelp.com"
+baseURL = "https://help.hduhelp.com"
 languageCode = "zh-cn"
-title = "杭电指南"
+title = "杭电导航"
 theme = "docdock"
 
 [params]
