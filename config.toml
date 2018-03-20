@@ -6,7 +6,7 @@ theme = "docdock"
 [params]
 themeStyle = "original"
 themeVariant = "blue"
-editURL = "https://github.com/hduhelper/HDU-Guide/edit/master/content/"
+#editURL = "https://github.com/hduhelper/HDU-Guide/edit/master/content/"
 showVisitedLinks = false # default is false
 ordersectionsby = "weight" # ordersectionsby = "title"
 disableHomeIcon = true # default is false
