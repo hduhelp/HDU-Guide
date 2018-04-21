@@ -1,5 +1,6 @@
 baseURL = "https://help.hduhelp.com"
 languageCode = "zh-cn"
+DefaultContentLanguage = "zh-cn"
 title = "杭电导航"
 theme = "docdock"
 

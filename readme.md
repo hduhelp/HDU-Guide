@@ -15,7 +15,7 @@
 然后本文档采用 Docdock 主题，使用如下命令下载主题到本地
 
 ```bash
-git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
+git submodule add https://github.com/hduhelper/hugo-theme-docdock.git themes/docdock
 git submodule init
 git submodule update
 ```
