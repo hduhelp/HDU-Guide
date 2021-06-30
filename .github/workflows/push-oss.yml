@@ -1,0 +1,39 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+  pull_request:
+
+env:
+  BUCKET: help-hduhelp-com
+  ENDPOINT: https://oss-accelerate.aliyuncs.com
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.83.1'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Sync to oss
+        uses: manyuanrong/setup-ossutil@master
+        with:
+          endpoint: oss-cn-hangzhou.aliyuncs.com
+          access-key-id: ${{ secrets.ALIYUN_KEY }}
+          access-key-secret: ${{ secrets.ALIYUN_SECRET }}
+      - name: cp files to aliyun
+        run: ossutil cp -rf ./public oss://${{ env.BUCKET }}/
+
