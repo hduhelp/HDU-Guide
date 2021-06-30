@@ -32,8 +32,8 @@ jobs:
         uses: manyuanrong/setup-ossutil@master
         with:
           endpoint: oss-cn-hangzhou.aliyuncs.com
-          access-key-id: ${{ secrets.ALIYUN_KEY }}
-          access-key-secret: ${{ secrets.ALIYUN_SECRET }}
+          access-key-id: ${{ secrets.ALIYUN_KEY_FOR_PUBLIC_REPO }}
+          access-key-secret: ${{ secrets.ALIYUN_SECRET_FOR_PUBLIC_REPO }}
       - name: cp files to aliyun
         run: ossutil cp -rf ./public oss://${{ env.BUCKET }}/
 
